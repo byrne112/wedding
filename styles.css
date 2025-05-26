@@ -135,7 +135,7 @@ h2 {
 #about {
     margin: 0% 0% 0% 0%;
     background-color: hsl(55, 52%, 96%);
-    background-image: radial-gradient(circle, #FFF3C5 2px, transparent 1.5px);
+    /*background-image: radial-gradient(circle, #FFF3C5 2px, transparent 1.5px);*/
     background-size: 32px 32px;
     border-radius: 1.5rem;
 }
@@ -177,7 +177,7 @@ h2 {
 
 #details {
     background-color: #FFFBDA;
-    background-image: radial-gradient(circle, #FAF9EF 2px, transparent 1.5px);
+    /*background-image: radial-gradient(circle, #e8e3b0e1 2px, transparent 1.5px);*/
     background-size: 32px 32px;
     border-radius: 1.5rem;
 
@@ -282,7 +282,7 @@ h2 {
 
 #add_details {
     background-color: #fff7f0;
-    background-image: radial-gradient(circle, #ffe0ec 1.5px, transparent 1.5px);
+   /*background-image: radial-gradient(circle, #ffe0ec 1.5px, transparent 1.5px);*/
     background-size: 32px 32px;
     border-radius: 1.5rem;
 
@@ -298,7 +298,7 @@ h2 {
 
 #Where {
     background-color: #FFFBDA;
-    background-image: radial-gradient(circle, #FAF9EF 2px, transparent 1.5px);
+    /*background-image: radial-gradient(circle, #e8e3b0e1 2px, transparent 1.5px);*/
     background-size: 32px 32px;
     border-radius: 1.5rem;
     width: 100vw;
@@ -325,7 +325,7 @@ h2 {
 
 #RSVP {
     background-color: #FFFBDA;
-    background-image: radial-gradient(circle, #FAF9EF 2px, transparent 1.5px);
+    /*background-image: radial-gradient(circle, #e8e3b0e1 2px, transparent 1.5px);*/
     background-size: 32px 32px;
     border-radius: 1.5rem;
 
@@ -385,7 +385,10 @@ footer a[href^="mailto:"] {
         padding-right: 0.5rem;
         box-sizing: border-box;
     }
-
+    .aboutinner {
+        max-width: 98vw;
+        padding: 1rem 0.5rem;
+    }
     .detailsinner,
     .RSVPinner {
         max-width: 100%;
