@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Wedding</title>
+    <link href="https://fonts.googleapis.com/css?family=Corben:700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function updateCountdown() {
+            // Target date: 6 Dec 2025, 12:00pm Melbourne time (AEDT, UTC+11)
+            const eventDate = new Date('2025-12-06T12:00:00+11:00');
+            const now = new Date();
+            const diff = eventDate - now;
+
+            if (diff <= 0) {
+                document.getElementById('countdown').innerHTML = "It's Wedding Time!";
+                return;
+            }
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            const minutes = Math.floor((diff / (1000 * 60)) % 60);
+            const seconds = Math.floor((diff / 1000) % 60);
+
+            document.getElementById('countdown').innerHTML =
+    `<span>${days} days</span> <span>${hours} hours</span><br>` +
+    `<span>${minutes} minutes</span> <span>${seconds} seconds</span>`;
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#details">Details</a></li>
+            <li><a href="#Where">Where to stay</a></li>
+            <li><a href="#RSVP">RSVP</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section 1: Hero/Header with Image -->
+    <header class="hero-header">
+        <img src="intro_fg.gif" alt="Foreground" class="header-foreground">
+    </header>
+
+    <!-- Section 2: About Us -->
+    <section id="about">
+  <div class="aboutinner">
+    <h2>6 December 2025 - 2:00 pm<br>House of Plants Bar Abbotsford</h2>
+    <div class="about-columns">
+      <div class="about-image">
+        <img src="Engagement_with_tape.png" alt="Engagement">
+      </div>
+      <div class="about-text">
+        <p>
+          Our journey began in early 2021, and from the very start, it felt like something truly special. From our first date at a little Japanese restaurant to years filled with travel, non-stop laughs, endless adventures, way too much good food, and heaps of love — it's been a beautiful ride.<br><br>
+          Now, after a magical proposal at the foot of Mount Fuji, we’re tying the knot in the heart of Melbourne, and couldn’t be more excited to celebrate this next chapter with the people we love most.<br><br>
+          Get ready for a day filled with love, laughs, plenty of music and lots of drinks!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Section 3: Wedding Details -->
+
+    <section id="details">
+    <div class="detailsinner">
+        <h1 class="section-title">About Our Wedding Day</h1>
+        <div class="two-columns">
+            <div class="column">
+                <div class="image1"><img src="Ceremony_with_tape.png"></div>
+                <h2>Ceremony</h2>
+                <p>Our 12:00 pm ceremony will take place at the registry office at the Old Treasury Building, right in the center of Melbourne. It’s a stunning building that dates back to 1858, built during the gold rush. Not only is it beautiful, but it holds a lot of history, and it feels like the perfect spot for us to begin this new chapter. <br><br>
+                Unfortunately, the registry office doesn't have a lot of space, so we are only able to invite our close family into the building for the ceremony - which will last about 30 minutes.</p>
+            </div>
+            <div class="column">
+                <div class="image1"><img src="Reception_with_tape.png"></div>
+                <h2>Reception</h2>
+                <p>Kicking off at 2:00 pm at the House of Plants Bar in Abbotsford. It’s got that classic Melbourne vibe, plants everywhere, great cocktails, and a relaxed atmosphere. We will have some live music being played throughout the day that captures our cultural backgrounds and provides a great backdrop for the delicious food we will have catered from local Melbourne establishments.<br><br>
+                Unfortunately, as the reception venue is a bar, we are unable to invite along any children - apologies for any difficulty this causes!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Section 3: Additional Details -->
+    <section id="add_details">
+  <div class="detailsinner">
+    <div class="two-columns">
+      <div class="column">
+        <h2>Dress code</h2>
+        <p>For us, the most important thing is having you there to share this special moment. So wear whatever makes you feel good. That said, if you're wondering what to pack, December in Melbourne can be hot and dry, or cold and windy, or all four seasons in a day, so bring some sunnies, maybe a light coat, and keep an eye on the weather apps as the day gets closer.</p>
+        <h2>Wedding Week Celebrations</h2>
+        <p>With people travelling from overseas and interstate, we thought it would be a good opportunity to have some celebrations in the days leading up to and following the wedding. Please watch this space as we get nearer to December!</p>
+        <h2>Wishing Well</h2>
+        <p>While we are not expecting gifts from our guests, we will have a wishing well at the reception. We understand that many of our guests are travelling to Melbourne, and it is an expensive city to visit, so just having you there to celebrate the day with us is our gift.</p>
+      </div>
+      <div class="column">
+        <div class="image2"><img src="Orquideas_tape.png" alt="Orquideas"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 4: Where to stay -->
+<section id="Where">
+    <h1 class="section-title">Where to Stay & Explore</h1>
+        <p>Melbourne is one of those cities that’s best explored at your own pace. If you’ve got some free time before or after the wedding, here are a few spots to check out or to consider staying. All of these locations are easily accessible to the wedding reception. <br><br>
+        If you're looking to stay somewhere that is walking distance to the wedding reception, then we would recommend Collingwood, Richmond, or Abbotsford. If you're looking to stay somewhere close to us, we're in North Melbourne. For hotels and Airbnbs, we'd recommend somewhere in the CBD or inner city, as these will have the most options and easy public transport. Feel free to reach out to either of us if you would like to bounce any ideas off us!</p>
+    <div class="two-columns">
+        <div class="column">
+           <div class="image2"><img src="Jeju_tape.png"></div>
+        </div>
+        <div class="column">
+            <h2>Melbourne CBD, Docklands & Southbank:</h2>
+                <p>The heart of Melbourne is a vibrant mix of culture, shopping, and entertainment. Explore historic arcades, visit the State Library, or admire world-class art at the National Gallery of Victoria. Federation Square and Hosier Lane showcase the city’s creative energy, while the Queen Victoria Market offers a classic local shopping experience. Docklands brings modern waterfront dining, shopping, and stunning views, while Southbank’s riverside promenade is home to arts venues, lively restaurants, and the Crown Entertainment Complex. For breathtaking city  views, head up to the Eureka Skydeck.</p><br><br>
+            <h2>Inner Northern Suburbs:</h2>
+                <p>Melbourne’s inner north is full of character and creativity. Fitzroy and Collingwood are hotspots for street art, quirky cafes, and boutique shopping. Brunswick buzzes with live music and diverse food, while Richmond blends great dining, bustling pubs, and sports culture at the MCG. North Melbourne offers a quieter charm with historic streets, cafes, and easy access to Queen Victoria Market.</p>
+        </div>
+    </div>
+    <div class="two-columns">
+        <div class="column">
+            <h2>Inner Southern Suburbs:</h2>
+                <p>Trendy and stylish, the inner south offers a mix of high-end and laid-back vibes. South Yarra is home to boutique shopping and the lush Royal Botanic Gardens. South Melbourne has a relaxed, village feel with its famous market and heritage buildings. Prahran is known for its buzzing nightlife and Chapel Street shopping, while St Kilda’s beachside charm includes Luna Park, lively cafes, and a thriving music scene.</p><br><br>
+            <h2>Outside Melbourne:</h2>
+                <p>Beyond the city, Victoria offers stunning landscapes and charming towns. The Yarra Valley is perfect for wine lovers, with rolling vineyards and scenic views. The Mornington Peninsula combines beautiful beaches, wineries, and relaxing hot springs. Take a drive along the Great Ocean Road to see breathtaking coastal scenery and the iconic Twelve Apostles. <br><br>
+                We hope you’ll take the time to explore and enjoy Melbourne —whether you’re relaxing in the city or heading out to see some stunning spots around the state!</p>
+        </div>
+        <div class="column">
+            <div class="image2"><img src="Nagoya_tape.png"></div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Section 5: Counter -->
+    <section id="counter-section" class="counter-section">
+        <div class="counter-content">
+            <div class="countdown-timer" id="countdown"></div>
+        </div>
+    </section>
+
+    <!-- Section 6: RSVP  -->
+    <section id="RSVP">
+        <div class="RSVPinner">
+            <h2>RSVP</h2>
+            <p>Please let us know if you'll be able to join us on our special day.</p><br>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdHw2s45alPLFXf3VixG4mHfYm5Kwb5xE9kCIhejy8_WsB2vQ/viewform"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            width="640"
+            height="900"
+            style="display:block; margin:0 auto;"></iframe>
+    </div>   
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy;
+        If you have any questions and would like to get in touch with us, please email us at <a href="mailto:nata.y.joey@gmail.com" target="_blank">nata.y.joey@gmail.com</a>.</p>
+    </footer>
+</body>
+</html>
