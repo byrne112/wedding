@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +14,7 @@ body {
 
 /* Navigation Bar */
 nav {
-    background-color: #00754D; /* A fun, wedding-themed color */
+    background-color: #00754D;
     padding: 1rem 0;
     text-align: center;
 }
@@ -23,11 +22,17 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    gap: 2rem;
+    background: #FFF3C5;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline-block;
 }
 
 nav ul li a {
@@ -35,27 +40,28 @@ nav ul li a {
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
+    padding: 1rem 0.5rem;
+    display: block;
 }
 
 /* Hero Header with Parallax Background */
 .hero-header {
     position: relative;
     width: 100vw;
-    min-height: 600px; /* Adjust as needed */
+    min-height: 600px;
     background-image: url('intro_bg.gif');
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Parallax effect */
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
 
-/* Foreground image styling */
 .header-foreground {
-    width: 650px; 
+    width: 650px;
     max-width: 80vw;
     height: auto;
     z-index: 2;
@@ -64,7 +70,6 @@ nav ul li a {
     margin: 0 auto;
 }
 
-/* Header Section */
 header {
     text-align: center;
     padding: 3rem 0;
@@ -83,58 +88,43 @@ header h1 {
     font-family: 'Corben', sans-serif;
     font-size: 3rem;
     margin-bottom: 1rem;
-    text-align: center;}
+    text-align: center;
+}
 
 header .tagline {
     font-size: 1.5rem;
     font-style: italic;
 }
 
-.image1 img {
-    width: 60%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.column .image1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.column .image2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.image1 img{
-    width: 60%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.image2 img{
+.image1 img,
+.image2 img {
     width: 80%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
+.column .image1,
+.column .image2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Sections */
 section {
     padding: 2rem 2rem;
     margin-left: 15%;
     margin-right: 15%;
 }
+
 h1, h2 {
     color: #1B4635 !important;
 }
+
 #about {
-margin: 0% 0% 0% 0%; /* top, right, bottom, left */
+    margin: 0;
     background-color: #FAF9EF;
     background-image: radial-gradient(circle, #FFF3C5 2px, transparent 1.5px);
     background-size: 32px 32px;
@@ -146,17 +136,19 @@ margin: 0% 0% 0% 0%; /* top, right, bottom, left */
     margin: 0 auto;
     padding: 2rem 2rem;
 }
+
 .aboutinner h2 {
     text-align: center;
 }
+
 .about-columns {
     display: flex;
     align-items: center;
-    gap: 0.5rem; /* Smaller gap */
+    gap: 0.5rem;
 }
 
 .about-image {
-    flex: 0 0 400px; /* Smaller fixed width */
+    flex: 0 0 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,124 +166,10 @@ margin: 0% 0% 0% 0%; /* top, right, bottom, left */
     text-align: justify;
 }
 
-#details {
-    background-color: #FFF3C5;
-    background-image: radial-gradient(circle, #FAF9EF 2px, transparent 1.5px);
-    background-size: 32px 32px;
-    border-radius: 1.5rem;
-
-
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    box-sizing: border-box;
-    padding: 2rem; /* Remove section padding here */
-}
-  .detailsinner {
-    max-width: 80vw; /* Or use the same as your body/content width */
-    margin: 0 auto;
-    padding: 2rem 2rem; /* Add vertical padding if needed */
-}  
-#details .detailsinner {
-    padding-top: 2rem; /* Reduce this value as needed */
-    padding-bottom: 2rem; /* Reduce this value as needed */
-}
-section h2 {
-    font-family: 'Corben', sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #00754D;
-
-}
-h2 {
-    text-align: left;
-        font-family: 'Corben', sans-serif;
-}
-
-
-/* Two-Column Layout */
-.two-columns {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-top: 1rem;
-    align-items: center; /* This will vertically center columns if .two-columns has a set height */
-    min-height: 400px;   /* Set a min-height as needed */
-}
-.two-columns .column p {
-    text-align: justify;
-}
-.two-columns .column h2 {
-    margin-top: 1rem; /* or adjust as needed */
-}
-.two-columns .column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;   /* Vertically center content in the column */
-    align-items: center;       /* Horizontally center content */
-    width: 48%;
-    height: 100%;              /* Take full height of parent */
-}
-
-.counter-section {
-    position: relative;
-    width: 100vw;
-    min-height: 650px;
-    background-image: url('counter_jeju.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    /* Full-bleed styles */
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    box-sizing: border-box;
-
-    /* Flex for bottom-right alignment */
-    display: flex;
-    align-items: flex-end;    /* Align children to the bottom */
-    justify-content: flex-end;/* Align children to the right */
-    padding-right: 3rem;
-}
-
-.countdown-timer {
-    font-family: 'Corben', sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #FFF3C5;
-    letter-spacing: 2px;
-    text-align: right;
-    margin-right: 10px;
-    padding: 0;
-    /* White outline */
-    text-shadow:
-        -1px -1px 0 #000000,
-         1px -1px 0 #000000,
-        -1px  1px 0 #000000,
-         1px  1px 0 #000000;
-}
-#add_details {
-    background-color: #fff7f0;
-    background-image: radial-gradient(circle, #ffe0ec 1.5px, transparent 1.5px);
-    background-size: 32px 32px;
-    border-radius: 1.5rem;
-
-    /* Full-bleed styles */
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    box-sizing: border-box;
-    padding: 0; /* Remove section padding here if present */
-}
-#Where {
+#details,
+#add_details,
+#Where,
+#RSVP {
     background-color: #FFF3C5;
     background-image: radial-gradient(circle, #FAF9EF 2px, transparent 1.5px);
     background-size: 32px 32px;
@@ -304,47 +182,100 @@ h2 {
     margin-right: -50vw;
     box-sizing: border-box;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
+    padding-left: 0;
+    padding-right: 0;
 }
+
+.detailsinner,
+.RSVPinner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+}
+
+.RSVPinner {
+    text-align: center;
+}
+
+.RSVPinner h2 {
+    text-align: center;
+}
+
+.RSVPinner iframe {
+    margin-bottom: 2rem;
+}
+
 #Where .section-title,
 #Where .two-columns,
 #Where > p {
     max-width: 80vw;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 0 0 0;
+    padding: 0;
 }
 
+.two-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 1rem;
+    align-items: center;
+    min-height: 400px;
+}
 
+.two-columns .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    height: 100%;
+}
 
-#RSVP {
-    background-color: #FFF3C5;
-    background-image: radial-gradient(circle, #FAF9EF 2px, transparent 1.5px);
-    background-size: 32px 32px;
-    border-radius: 1.5rem;
+.two-columns .column p {
+    text-align: justify;
+}
 
-    /* Full-bleed styles */
-    width: 100vw;
+.two-columns .column h2:not(:first-child) {
+    margin-top: 2rem;
+}
+
+.counter-section {
     position: relative;
+    width: 100vw;
+    min-height: 650px;
+    background-image: url('counter_jeju.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
     box-sizing: border-box;
-    padding: 2rem 2rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 2rem;
 }
-  .RSVPinner {
-    max-width: 800px; /* Or use the same as your body/content width */
-    margin: 0 auto;
-     margin-bottom: 3rem !important;
-    padding: 1rem 2rem; /* Add vertical padding if needed */
-    text-align: center;
-}  
 
-.RSVPinner h2 {
-    text-align: center;
+.countdown-timer {
+    font-family: 'Corben', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffef5a;
+    letter-spacing: 2px;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    text-shadow:
+        -1px -1px 0 #fff,
+         1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+         1px  1px 0 #fff;
 }
-/* Footer */
+
 footer {
     background-color: #00754D;
     color: white;
@@ -354,81 +285,98 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
 footer a[href^="mailto:"] {
     color: #fff !important;
-    text-decoration: underline; /* optional, keeps the underline */
+    text-decoration: underline;
 }
 
-/*mobile styles*/
+/* Mobile styles */
 @media (max-width: 900px) {
-  #details,
-  #add_details,
-  #Where,
-  #RSVP {
-    width: 100%;
-    left: 0;
-    right: 0;
-    margin-left: 0;
-    margin-right: 0;
-    border-radius: 0;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    box-sizing: border-box;
-  }
+    section,
+    #details,
+    #add_details,
+    #Where,
+    #RSVP {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        border-radius: 0;
+    }
 
-  .detailsinner,
-  .RSVPinner {
-    max-width: 100%;
-    padding: 1rem 0.5rem;
-  }
+    .detailsinner,
+    .aboutinner,
+    .RSVPinner {
+        max-width: 100vw;
+        padding: 1rem 0.5rem;
+    }
 
-  .two-columns,
-  .about-columns {
-    flex-direction: column;
-    gap: 1.5rem;
-    min-height: unset;
-  }
+    .two-columns,
+    .about-columns {
+        flex-direction: column;
+        gap: 1.5rem;
+        min-height: unset;
+    }
 
-  .two-columns .column,
-  .about-columns .about-image,
-  .about-columns .about-text {
-    width: 100%;
-    align-items: flex-start;
-    padding: 0;
-  }
+    .two-columns .column,
+    .about-columns .about-image,
+    .about-columns .about-text {
+        width: 100%;
+        align-items: flex-start;
+        padding: 0;
+    }
 
-  .image1 img,
-  .image2 img,
-  .about-image img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
+    .image1 img,
+    .image2 img,
+    .about-image img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
 
-  .section-title,
-  h1, h2 {
-    font-size: 1.2rem;
-    text-align: center;
-  }
+    .section-title,
+    h1, h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
 
-  nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
+    nav ul {
+        flex-direction: row;
+        gap: 1rem;
+        font-size: 1rem;
+        padding: 0.5rem 0;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
 
-  .counter-section {
-    min-height: 300px;
-    padding: 1rem;
-  }
+    nav ul li a {
+        padding: 0.5rem 0.5rem;
+    }
 
-  .countdown-timer {
-    font-size: 1rem;
-  }
+    .counter-section {
+        min-height: 300px;
+        padding: 1rem;
+    }
 
-  .RSVPinner iframe {
-    width: 100% !important;
-    min-width: 0;
-    max-width: 100vw;
-    height: 400px;
-  }
+    .countdown-timer {
+        font-size: 1rem;
+    }
+
+    .RSVPinner iframe {
+        width: 100% !important;
+        min-width: 0;
+        max-width: 100vw;
+        height: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .RSVPinner iframe {
+        height: 350px;
+    }
+    .section-title,
+    h1, h2 {
+        font-size: 1rem;
+    }
 }
