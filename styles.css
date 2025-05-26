@@ -404,7 +404,10 @@ footer a[href^="mailto:"] {
     max-width: 100%;
     height: auto;
   }
-
+    .section-title {
+        font-size: 2rem;
+        text-align: center;
+  }
   .section-title,
   h1, h2 {
     font-size: 1.2rem;
