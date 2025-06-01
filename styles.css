@@ -407,7 +407,11 @@ footer a[href^="mailto:"] {
         align-items: flex-start;
         padding: 0;
     }
-
+    .two-columns .column h2 {
+        align-self: center;
+        text-align: center !important;
+        width: 100%;
+    }
     .image1 img,
     .image2 img,
     .about-image img {
