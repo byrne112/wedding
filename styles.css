@@ -371,6 +371,10 @@ footer a[href^="mailto:"] {
         background-position: center bottom 20%;
         background-attachment: scroll;
     }
+    .header-foreground {
+        max-width: 98vw;
+        width: 98vw;
+    }
     #details,
     #add_details,
     #Where,
