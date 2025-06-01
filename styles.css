@@ -363,6 +363,7 @@ footer a[href^="mailto:"] {
 @media (max-width: 900px) {
     .hero-header {
         background-position: center bottom 20%;
+        min-height: 350px; 
         background-attachment: scroll;
     }
     .header-foreground {
