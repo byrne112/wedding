@@ -241,7 +241,7 @@ section h2 {
 .counter-section {
     position: relative;
     width: 100vw;
-    min-height: 700px;
+    min-height: 900px;
     background-image: url('jeju_photo.jpg');
     background-size: cover;
     background-position: center;
