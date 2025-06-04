@@ -36,7 +36,7 @@ nav ul li a {
 
 .hero-header {
     position: relative;
-    width: 100vw;
+    width: 100%;
     min-height: 650px;
     background-image: url('intro_bg.gif');
     background-size: cover;
@@ -182,7 +182,7 @@ h2 {
     border-radius: 1.5rem;
 
 
-    width: 100vw;
+    width: 100%;
     position: relative;
     left: 50%;
     right: 50%;
@@ -240,7 +240,7 @@ section h2 {
 
 .counter-section {
     position: relative;
-    width: 100vw;
+    width: 100%;
     min-height: 600px;
     background-image: url('jeju_photo.jpg');
     background-size: cover;
@@ -275,7 +275,7 @@ section h2 {
     background-size: 32px 32px;
     border-radius: 1.5rem;
 
-    width: 100vw;
+    width: 100%;
     position: relative;
     left: 50%;
     right: 50%;
@@ -290,7 +290,7 @@ section h2 {
     /*background-image: radial-gradient(circle, #e8e3b0e1 2px, transparent 1.5px);*/
     background-size: 32px 32px;
     border-radius: 1.5rem;
-    width: 100vw;
+    width: 100%;
     position: relative;
     left: 50%;
     right: 50%;
@@ -318,7 +318,7 @@ section h2 {
     background-size: 32px 32px;
     border-radius: 1.5rem;
 
-    width: 100vw;
+    width: 100%;
     position: relative;
     left: 50%;
     right: 50%;
@@ -446,7 +446,7 @@ footer a[href^="mailto:"] {
     .RSVPinner iframe {
         width: 100% !important;
         min-width: 0;
-        max-width: 100vw;
+        max-width: 100%;
         height: 400px;
     }
     h1,
