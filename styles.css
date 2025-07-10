@@ -21,6 +21,8 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+     gap: 0.5rem; 
+    overflow: unset; 
 }
 
 nav ul li {
