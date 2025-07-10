@@ -376,12 +376,15 @@ footer a[href^="mailto:"] {
     justify-content: center;
     overflow: unset; 
   }
+      nav ul li {
+    margin: 0 5px;
+  }
     .nav-lang {
-  height: 18px;  /* adjust height */
-  width: auto;   /* keeps aspect ratio */
+  height: 18px;
+  width: auto;
 }
     nav a {
-    padding: 6px; /* smaller padding for tighter links */
+    padding: 6px;
   }
     #details,
     #add_details,
