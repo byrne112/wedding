@@ -371,6 +371,10 @@ footer a[href^="mailto:"] {
     }
      nav ul {
     gap: 10px; 
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    overflow: unset; 
   }
     .nav-lang {
   height: 18px;  /* adjust height */
