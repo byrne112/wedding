@@ -34,7 +34,7 @@ nav ul li a {
     font-weight: bold;
 }
 .nav-lang {
-  height: 40px;  /* adjust height */
+  height: 30px;  /* adjust height */
   width: auto;   /* keeps aspect ratio */
 }
 .hero-header {
