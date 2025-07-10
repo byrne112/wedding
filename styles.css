@@ -13,7 +13,7 @@ body {
 
 nav {
     background-color: #00754D;
-    padding: 0.5rem;
+    padding: 0.8rem;
     text-align: center;
 }
 
@@ -368,6 +368,9 @@ footer a[href^="mailto:"] {
         max-width: 98vw;
         width: 98vw;
     }
+     nav ul {
+    gap: 10px; 
+  }
     #details,
     #add_details,
     #Where,
