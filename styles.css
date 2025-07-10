@@ -371,6 +371,10 @@ footer a[href^="mailto:"] {
      nav ul {
     gap: 10px; 
   }
+    .nav-lang {
+  height: 18px;  /* adjust height */
+  width: auto;   /* keeps aspect ratio */
+}
     #details,
     #add_details,
     #Where,
